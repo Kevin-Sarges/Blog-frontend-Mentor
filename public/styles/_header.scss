@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+  padding: 40px 150px;
+  background: $gradient;
+  color: $white;
+
+  .navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .ulConatiner {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .options {
+        a {
+          position: fixed;
+          color: $white;
+        }
+
+        .active {
+          display: none;
+        }
+      }
+    }
+  }
+
+  main {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}

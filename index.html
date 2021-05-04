@@ -15,63 +15,74 @@
 </head>
 <body>
   <header>
-    <nav class="navBar">
-      <div class="ulConatiner">
-        <img src="./public/images/logo.svg" alt="Logo">
-      
-        <ul class="options">
-          <li>
-            <a href="#">Product</a>
-            
-            <ul class="active">
-              <li>Overview</li>
-              <li>Pricing</li>
-              <li>Marketplace</li>
-              <li>Features</li>
-              <li>Integrations</li>
-            </ul>
-          </li>
-        </ul>
-  
-        <ul class="options">
-          <li>
-            <a href="#">Company</a>
-  
-            <ul class="active">
-              <li>About</li>
-              <li>Team</li>
-              <li>Blog</li>
-              <li>Careers</li>
-            </ul>
-          </li>
-        </ul>
-  
-        <ul class="options">
-          <li>
-            <a href="#">Connect</a>
-  
-            <ul class="active">
-              <li>Contact</li>
-              <li>Newsletter</li>
-              <li>LinkedIn</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      
-      <div>
-        <button>Login</button>
-        <button>Sign Up</button>
-      </div>
-    </nav>
-
-    <main>
-      <h1>A modern publishing platform</h1>
-      <p>Grow your audience and build your online brand</p>
-
-      <button>Start for Free</button>
-      <button>Learn More</button>
-    </main>
+    <div class="container">
+      <nav class="navBar">
+        <div class="ulConatiner">
+          <img src="./public/images/logo.svg" alt="Logo">
+        
+          <ul>
+            <li>
+              <a href="#" onclick="optionProduct.open()">
+                Product
+                <img id="iconProduct" src="./public/images/icon-arrow-light.svg" alt="arrow">
+              </a>
+              
+              <ul class="hidden" id="listProduct">
+                <li>Overview</li>
+                <li>Pricing</li>
+                <li>Marketplace</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul>
+            </li>
+          </ul>
+    
+          <ul>
+            <li>
+              <a href="#" onclick="optionCompany.open()">
+                Company
+                <img id="iconCompany" src="./public/images/icon-arrow-light.svg" alt="arrow">
+              </a>
+    
+              <ul class="hidden" id="listCompany">
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+            </li>
+          </ul>
+    
+          <ul>
+            <li>
+              <a href="#" onclick="optionConnect.open()">
+                Connect
+                <img id="iconConnect" src="./public/images/icon-arrow-light.svg" alt="arrow">
+              </a>
+    
+              <ul class="hidden" id="listConnect">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="buttonLogin">
+          <button class="login">Login</button>
+          <button class="sing">Sign Up</button>
+        </div>
+      </nav>
+    
+      <main>
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+    
+        <button class="start">Start for Free</button>
+        <button class="learn">Learn More</button>
+      </main>
+    </div>
   </header>
 
   <main>
@@ -154,5 +165,7 @@
       <p>Coded by <a href="#">Your Name Here</a>.</p>
     </div>
   </footer>
+
+  <script src="./public/scripts/main.js"></script>
 </body>
 </html>

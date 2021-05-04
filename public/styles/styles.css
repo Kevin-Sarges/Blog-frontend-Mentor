@@ -35,12 +35,19 @@ a {
 
 header {
   width: 100%;
-  padding: 40px 150px;
-  background: linear-gradient(100.05deg, #FF8F70 4.09%, #FF3D54 95.53%);
   color: #fff;
+  border-radius: 0px 0px 0px 130px;
+  background: linear-gradient(100.05deg, #FF8F70 4.09%, #FF3D54 95.53%);
 }
 
-header .navBar {
+header .container {
+  width: 100%;
+  height: 100%;
+  padding: 40px 150px;
+  background: url("../images/bg-pattern-intro.svg") 26% 50%;
+}
+
+header .container .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,7 +59,7 @@ header .navBar {
           justify-content: space-between;
 }
 
-header .navBar .ulConatiner {
+header .container .navBar .ulConatiner {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,19 +72,134 @@ header .navBar .ulConatiner {
           justify-content: space-between;
 }
 
-header .navBar .ulConatiner .options a {
-  position: fixed;
+header .container .navBar .ulConatiner ul a {
   color: #fff;
+  position: relative;
+  opacity: .7;
+  font-weight: 600;
 }
 
-header .navBar .ulConatiner .options .active {
-  display: none;
+header .container .navBar .ulConatiner ul a:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
-header main {
+header .container .navBar .ulConatiner ul a img {
+  margin-left: 5px;
+}
+
+header .container .navBar .ulConatiner ul a .image {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .container .navBar .ulConatiner ul .hidden {
+  position: fixed;
+  margin-top: 20px;
+  padding: 20px 40px 20px 20px;
+  background: #fff;
+  color: #24242C;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .container .navBar .ulConatiner ul .hidden li {
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+header .container .navBar .ulConatiner ul .hidden li:hover {
+  font-weight: bold;
+}
+
+header .container .navBar .ulConatiner ul .active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .container .navBar button {
+  padding: 10px 30px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  border-radius: 99px;
+}
+
+header .container .navBar .login {
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header .container .navBar .login:hover {
+  text-decoration: underline;
+  opacity: .6;
+}
+
+header .container .navBar .sing {
+  color: #FF3D54;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+header .container .navBar .sing:hover {
+  color: #fff;
+  background: #FF7B86;
+}
+
+header .container main {
   margin-top: 80px;
   margin-bottom: 100px;
   text-align: center;
+}
+
+header .container main p {
+  margin: 10px;
+  opacity: .7;
+}
+
+header .container main button {
+  margin: 25px;
+  padding: 15px;
+  border: none;
+  border-radius: 99px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header .container main .start {
+  color: #FF3D54;
+  background: #fff;
+}
+
+header .container main .start:hover {
+  color: #fff;
+  background: #FF7B86;
+}
+
+header .container main .learn {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+header .container main .learn:hover {
+  color: #FF3D54;
+  background: #fff;
 }
 
 footer {

@@ -34,8 +34,6 @@ main {
     position: relative;
     
     .conatainer {
-      width: 100%;
-      height: 100%;
       padding: 80px;
       background: url("../images/bg-pattern-circles.svg") -41% 83% no-repeat;
       background-size: 50rem;
@@ -73,7 +71,6 @@ main {
     color: $dark-gray-blue;
     
     .footerDescriptions {
-      width: 100%;
       padding: 44px 177px 150px 771px;;
       line-height: 20px;
 

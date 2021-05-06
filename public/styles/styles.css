@@ -1,19 +1,34 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-html, body {
+body, html {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 948px) {
+  body, html {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 body {
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -27,6 +42,12 @@ li {
 
 p {
   font-size: 12px;
+}
+
+@media (max-width: 375px) {
+  p {
+    font-size: 24px;
+  }
 }
 
 a {
@@ -44,7 +65,7 @@ header .container {
   width: 100%;
   height: 100%;
   padding: 40px 150px;
-  background: url("../images/bg-pattern-intro.svg") 26% 50%;
+  background: url("../images/bg-pattern-intro.svg") 26% 50% no-repeat;
 }
 
 header .container .navBar {
@@ -59,8 +80,9 @@ header .container .navBar {
           justify-content: space-between;
 }
 
-header .container .navBar .ulConatiner {
-  width: 50%;
+header .container .navBar .navContainer {
+  width: 100%;
+  margin-left: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,30 +94,43 @@ header .container .navBar .ulConatiner {
           justify-content: space-between;
 }
 
-header .container .navBar .ulConatiner ul a {
+header .container .navBar .navContainer .ulConatiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .navBar .navContainer .ulConatiner ul a {
   color: #fff;
   position: relative;
   opacity: .7;
   font-weight: 600;
 }
 
-header .container .navBar .ulConatiner ul a:hover {
+header .container .navBar .navContainer .ulConatiner ul a:hover {
   opacity: 1;
   text-decoration: underline;
 }
 
-header .container .navBar .ulConatiner ul a img {
+header .container .navBar .navContainer .ulConatiner ul a img {
   margin-left: 5px;
+  margin-right: 30px;
 }
 
-header .container .navBar .ulConatiner ul a .image {
+header .container .navBar .navContainer .ulConatiner ul a .image {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-header .container .navBar .ulConatiner ul .hidden {
+header .container .navBar .navContainer .ulConatiner ul .hidden {
   position: fixed;
   margin-top: 20px;
   padding: 20px 40px 20px 20px;
@@ -111,16 +146,16 @@ header .container .navBar .ulConatiner ul .hidden {
   transition: .3s;
 }
 
-header .container .navBar .ulConatiner ul .hidden li {
+header .container .navBar .navContainer .ulConatiner ul .hidden li {
   margin: 10px 0px;
   cursor: pointer;
 }
 
-header .container .navBar .ulConatiner ul .hidden li:hover {
+header .container .navBar .navContainer .ulConatiner ul .hidden li:hover {
   font-weight: bold;
 }
 
-header .container .navBar .ulConatiner ul .active {
+header .container .navBar .navContainer .ulConatiner ul .active {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(10px);
@@ -171,7 +206,7 @@ header .container main p {
   opacity: .7;
 }
 
-header .container main button {
+header .container main .buttons button {
   margin: 25px;
   padding: 15px;
   border: none;
@@ -181,25 +216,92 @@ header .container main button {
   cursor: pointer;
 }
 
-header .container main .start {
+header .container main .buttons .start {
   color: #FF3D54;
   background: #fff;
 }
 
-header .container main .start:hover {
+header .container main .buttons .start:hover {
   color: #fff;
   background: #FF7B86;
 }
 
-header .container main .learn {
+header .container main .buttons .learn {
   color: #fff;
   background: transparent;
   border: 1px solid #fff;
 }
 
-header .container main .learn:hover {
+header .container main .buttons .learn:hover {
   color: #FF3D54;
   background: #fff;
+}
+
+@media (min-width: 376px) {
+  header .container .iconHamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  header .container {
+    padding: 150px 90px;
+  }
+  header .container .navBar {
+    width: 100%;
+    margin-bottom: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .container .navBar #logo {
+    margin: 0;
+    width: 170px;
+    height: 79px;
+  }
+  header .container .navBar .iconHamburger {
+    margin: 0;
+  }
+  header .container .navBar .iconHamburger img {
+    width: 79px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 375px) {
+  header .container .navBar .navContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  header .container main {
+    margin-bottom: 140px;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 375px) {
+  header .container main h1 {
+    padding: 0px 77px;
+    font-size: 97px;
+  }
+  header .container main p {
+    padding: 0px 74px;
+    font-size: 50px;
+  }
+  header .container main .buttons {
+    margin-top: 100px;
+  }
+  header .container main .buttons button {
+    padding: 40px 65px;
+    font-size: 45px;
+  }
 }
 
 main {
@@ -239,8 +341,6 @@ main .state {
 }
 
 main .state .conatainer {
-  width: 100%;
-  height: 100%;
   padding: 80px;
   background: url("../images/bg-pattern-circles.svg") -41% 83% no-repeat;
   background-size: 50rem;
@@ -278,7 +378,6 @@ main .footerMain {
 }
 
 main .footerMain .footerDescriptions {
-  width: 100%;
   padding: 44px 177px 150px 771px;
   line-height: 20px;
 }

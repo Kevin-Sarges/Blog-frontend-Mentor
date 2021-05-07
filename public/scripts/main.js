@@ -18,3 +18,9 @@ const optionConnect = {
     document.getElementById('iconConnect').classList.toggle('image');
   }
 }
+
+const hamburderMenu = {
+  open() {
+    document.getElementById('hamburger').classList.toggle('active')
+  }
+}

@@ -186,6 +186,7 @@ header {
 
         .iconHamburger {
           margin: 0;
+
           img {
             width: 79px;
             height: 50px;
@@ -193,9 +194,73 @@ header {
         }
 
         .navContainer {
-          @media (max-width: 375px) {
-            display: none;
+          width: 87%;
+          padding: 20px;
+          background: $white;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          z-index: 3;
+          position: fixed;
+          left: 0px;
+          top: 274px;
+          visibility: hidden;
+          opacity: 0;
+          
+          .ulConatiner {
+            flex-direction: column;
+
+            ul {
+              li {
+                margin: 50px;
+
+                a {
+                  position: relative;
+                  font-size: 44px;
+                  color: $black;
+                  opacity: 1;
+                }
+
+                .hidden {
+                  padding: 10px;
+
+                  li {
+                    font-size: 40px;
+                    line-height: 55px;
+                  }
+                }
+              }
+            }
           }
+
+          .buttonLogin {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid #c4c4c4;
+
+            button {
+              padding: 27px 123px;
+              font-size: 50px;
+            }
+
+            .login {
+              margin-top: 40px;
+              margin-bottom: 40px;
+              color: $black;
+            }
+
+            .sing {
+              margin-bottom: 40px;
+              background: $gradient;
+              color: $white;
+            }
+          }
+        }
+
+        .active {
+          visibility: visible;
+          opacity: 1;
         }
       }
 
@@ -204,7 +269,7 @@ header {
 
         @media (max-width: 375px) {
           h1 {
-            padding: 0px 77px;
+            padding: 0px 38px;
             font-size: 97px;
           }
 
@@ -226,4 +291,7 @@ header {
     }
   }
 
+  @media (max-width: 375px) {
+    width: 128%;
+  }
 }

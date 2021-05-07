@@ -272,15 +272,78 @@ header .container main .buttons .learn:hover {
     width: 79px;
     height: 50px;
   }
-}
-
-@media (max-width: 375px) and (max-width: 375px) {
   header .container .navBar .navContainer {
-    display: none;
+    width: 87%;
+    padding: 20px;
+    background: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 3;
+    position: fixed;
+    left: 0px;
+    top: 274px;
+    visibility: hidden;
+    opacity: 0;
   }
-}
-
-@media (max-width: 375px) {
+  header .container .navBar .navContainer .ulConatiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .container .navBar .navContainer .ulConatiner ul li {
+    margin: 50px;
+  }
+  header .container .navBar .navContainer .ulConatiner ul li a {
+    position: relative;
+    font-size: 44px;
+    color: #24242C;
+    opacity: 1;
+  }
+  header .container .navBar .navContainer .ulConatiner ul li .hidden {
+    padding: 10px;
+  }
+  header .container .navBar .navContainer .ulConatiner ul li .hidden li {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  header .container .navBar .navContainer .buttonLogin {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 1px solid #c4c4c4;
+  }
+  header .container .navBar .navContainer .buttonLogin button {
+    padding: 27px 123px;
+    font-size: 50px;
+  }
+  header .container .navBar .navContainer .buttonLogin .login {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #24242C;
+  }
+  header .container .navBar .navContainer .buttonLogin .sing {
+    margin-bottom: 40px;
+    background: linear-gradient(100.05deg, #FF8F70 4.09%, #FF3D54 95.53%);
+    color: #fff;
+  }
+  header .container .navBar .active {
+    visibility: visible;
+    opacity: 1;
+  }
   header .container main {
     margin-bottom: 140px;
   }
@@ -288,7 +351,7 @@ header .container main .buttons .learn:hover {
 
 @media (max-width: 375px) and (max-width: 375px) {
   header .container main h1 {
-    padding: 0px 77px;
+    padding: 0px 38px;
     font-size: 97px;
   }
   header .container main p {
@@ -301,6 +364,12 @@ header .container main .buttons .learn:hover {
   header .container main .buttons button {
     padding: 40px 65px;
     font-size: 45px;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    width: 128%;
   }
 }
 
@@ -393,6 +462,7 @@ main .footerMain .footerDescriptions p {
 
 @media (max-width: 375px) {
   main .editor {
+    width: 128%;
     background: url("../images/illustration-editor-mobile.svg") 53% 14% no-repeat;
     background-size: 77rem;
   }
@@ -415,7 +485,7 @@ main .footerMain .footerDescriptions p {
     font-size: 42px;
   }
   main .state {
-    margin-top: 100px;
+    width: 128%;
   }
   main .state .conatainer {
     margin-top: 490px;
@@ -427,6 +497,7 @@ main .footerMain .footerDescriptions p {
     width: 67rem;
     height: 74rem;
     top: -540px;
+    left: 37px;
   }
   main .state .conatainer .description {
     margin-top: 240px;
@@ -444,6 +515,7 @@ main .footerMain .footerDescriptions p {
     font-size: 42px;
   }
   main .footerMain {
+    width: 128%;
     background: url("../images/illustration-laptop-mobile.svg") 53% 14% no-repeat;
     background-size: 77rem;
   }
@@ -518,5 +590,31 @@ footer .attribution {
 
 footer .attribution a {
   color: #3e52a3;
+}
+
+@media (max-width: 375px) {
+  footer {
+    width: 128%;
+  }
+  footer .footerDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footerDiv img {
+    width: 210px;
+    height: 100px;
+  }
+  footer .footerDiv .linksFooter h4 {
+    margin-top: 130px;
+    font-size: 55px;
+  }
+  footer .footerDiv .linksFooter a {
+    font-size: 40px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

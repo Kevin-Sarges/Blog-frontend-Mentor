@@ -391,6 +391,78 @@ main .footerMain .footerDescriptions p {
   margin-bottom: 35px;
 }
 
+@media (max-width: 375px) {
+  main .editor {
+    background: url("../images/illustration-editor-mobile.svg") 53% 14% no-repeat;
+    background-size: 77rem;
+  }
+  main .editor h1 {
+    font-size: 78px;
+    margin-bottom: 110px;
+  }
+  main .editor .conatainer {
+    margin-top: 1150px;
+    padding: 150px 90px;
+    line-height: 89px;
+  }
+  main .editor .conatainer h2 {
+    padding: 8px 98px;
+    font-size: 76px;
+  }
+  main .editor .conatainer p {
+    margin-bottom: 100px;
+    padding: 8px 98px;
+    font-size: 42px;
+  }
+  main .state {
+    margin-top: 100px;
+  }
+  main .state .conatainer {
+    margin-top: 490px;
+    padding: 400px 80px;
+    background: url("../images/bg-pattern-circles.svg") 47% 85% no-repeat;
+    background-size: 115rem;
+  }
+  main .state .conatainer img {
+    width: 67rem;
+    height: 74rem;
+    top: -540px;
+  }
+  main .state .conatainer .description {
+    margin-top: 240px;
+    padding: 0px;
+    line-height: 89px;
+    text-align: center;
+  }
+  main .state .conatainer .description h2 {
+    padding: 8px 98px;
+    font-size: 86px;
+    margin-bottom: 50px;
+  }
+  main .state .conatainer .description p {
+    padding: 8px 98px;
+    font-size: 42px;
+  }
+  main .footerMain {
+    background: url("../images/illustration-laptop-mobile.svg") 53% 14% no-repeat;
+    background-size: 77rem;
+  }
+  main .footerMain .footerDescriptions {
+    margin-top: 1150px;
+    padding: 150px 90px;
+    line-height: 89px;
+  }
+  main .footerMain .footerDescriptions h2 {
+    padding: 8px 98px;
+    font-size: 76px;
+  }
+  main .footerMain .footerDescriptions p {
+    margin-bottom: 100px;
+    padding: 8px 98px;
+    font-size: 42px;
+  }
+}
+
 footer {
   padding: 40px 220px;
   background: #24242C;

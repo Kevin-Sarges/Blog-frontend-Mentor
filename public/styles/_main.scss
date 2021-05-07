@@ -25,7 +25,6 @@ main {
         margin-bottom: 35px;
       }
     }
-
   }
 
   .state {
@@ -81,6 +80,92 @@ main {
       p {
         padding: 0px 26px 0px 0px;
         margin-bottom: 35px;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    .editor {
+      background: url('../images/illustration-editor-mobile.svg') 53% 14% no-repeat;
+      background-size: 77rem;
+      
+      h1 {
+        font-size: 78px;
+        margin-bottom: 110px;
+      }
+
+      .conatainer {
+        margin-top: 1150px;
+        padding: 150px 90px;
+        line-height: 89px;
+
+        h2 {
+          padding: 8px 98px;
+          font-size: 76px;
+        }
+
+        p {
+          margin-bottom: 100px;
+          padding: 8px 98px;
+          font-size: 42px;
+        }
+      }
+    }
+
+    .state {
+      margin-top: 100px;
+      
+      .conatainer {
+        margin-top: 490px;
+        padding: 400px 80px;
+        background: url("../images/bg-pattern-circles.svg") 47% 85% no-repeat;
+        background-size: 115rem;
+        
+        img {
+          width: 67rem;
+          height: 74rem;
+          top: -540px;
+        }
+
+        .description {
+          margin-top: 240px;
+          padding: 0px;
+          line-height: 89px;
+          text-align: center;
+
+          h2 {
+            padding: 8px 98px;
+            font-size: 86px;
+            margin-bottom: 50px;
+          }
+
+          p {
+            padding: 8px 98px;
+            font-size: 42px;
+          }
+        }
+      }
+    }
+
+    .footerMain {
+      background: url('../images/illustration-laptop-mobile.svg') 53% 14% no-repeat;
+      background-size: 77rem;
+
+      .footerDescriptions {
+        margin-top: 1150px;
+        padding: 150px 90px;
+        line-height: 89px;
+
+        h2 {
+          padding: 8px 98px;
+          font-size: 76px;
+        }
+
+        p {
+          margin-bottom: 100px;
+          padding: 8px 98px;
+          font-size: 42px;
+        }
       }
     }
   }

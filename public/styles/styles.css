@@ -65,7 +65,7 @@ header .container {
   width: 100%;
   height: 100%;
   padding: 40px 150px;
-  background: url("../images/bg-pattern-intro.svg") 26% 50% no-repeat;
+  background: url("../images/bg-pattern-intro.svg") no-repeat 19%/209%;
 }
 
 header .container .navBar {
@@ -109,7 +109,7 @@ header .container .navBar .navContainer .ulConatiner {
 header .container .navBar .navContainer .ulConatiner ul a {
   color: #fff;
   position: relative;
-  opacity: .7;
+  opacity: 0.7;
   font-weight: 600;
 }
 
@@ -126,8 +126,8 @@ header .container .navBar .navContainer .ulConatiner ul a img {
 header .container .navBar .navContainer .ulConatiner ul a .image {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .container .navBar .navContainer .ulConatiner ul .hidden {
@@ -142,8 +142,8 @@ header .container .navBar .navContainer .ulConatiner ul .hidden {
   z-index: 3;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .container .navBar .navContainer .ulConatiner ul .hidden li {
@@ -160,8 +160,8 @@ header .container .navBar .navContainer .ulConatiner ul .active {
   visibility: visible;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .container .navBar button {
@@ -180,7 +180,7 @@ header .container .navBar .login {
 
 header .container .navBar .login:hover {
   text-decoration: underline;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 header .container .navBar .sing {
@@ -203,7 +203,7 @@ header .container main {
 
 header .container main p {
   margin: 10px;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 header .container main .buttons button {
